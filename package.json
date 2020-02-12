@@ -1,25 +1,33 @@
 {
-  "name": "react-native-router-flux",
-  "version": "4.2.0",
-  "description": "React Native Router using Flux architecture",
-  "repository": {
+  "_from": "git+https://github.com/sonnt612/react-native-router-flux.git",
+  "_id": "react-native-router-flux@4.2.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-router-flux",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "https://github.com/aksonov/react-native-router-flux"
+    "raw": "https://github.com/sonnt612/react-native-router-flux.git",
+    "rawSpec": "https://github.com/sonnt612/react-native-router-flux.git",
+    "saveSpec": "git+https://github.com/sonnt612/react-native-router-flux.git",
+    "fetchSpec": "https://github.com/sonnt612/react-native-router-flux.git",
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/sonnt612/react-native-router-flux.git#7abc81c8e96dcae51d010af74de3f93ca0a9141a",
+  "_spec": "https://github.com/sonnt612/react-native-router-flux.git",
+  "_where": "/Users/ownere/ReactNative/HeyU/ss-mobiles-ios",
   "bugs": {
     "url": "https://github.com/aksonov/react-native-router-flux"
   },
-  "homepage": "https://github.com/aksonov/react-native-router-flux#readme",
-  "license": "MIT",
-  "main": "src/index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "postinstall": "./node_modules/.bin/opencollective postinstall || exit 0",
-    "build": "./node_modules/.bin/babel src -d dist",
-    "lint": "prettier-eslint $PWD/'src/**/*.js' $PWD/'__tests__/**/*.js' --list-different",
-    "fix": "prettier-eslint $PWD/'src/**/*.js' $PWD/'__tests__/**/*.js' --write",
-    "test": "jest"
+  "bundleDependencies": false,
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-native-router-flux",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
   },
   "dependencies": {
     "@babel/runtime": "^7.6.0",
@@ -32,8 +40,13 @@
     "react-navigation-drawer": "^2.2.1",
     "react-navigation-stack": "^1.7.3",
     "react-navigation-tabs": "^2.5.2",
-    "remove": "^0.1.5"
+    "remove": "^0.1.5",
+    "react-native-experimental-navigation": "^0.29.2",
+    "react-native-tabs": "^1.0.9",
+    "react-static-container": "^1.0.2"
   },
+  "deprecated": false,
+  "description": "React Native Router using Flux architecture",
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.47",
     "@babel/code-frame": "7.0.0-beta.47",
@@ -65,10 +78,10 @@
     "react-native-reanimated": "^1.2.0",
     "react-test-renderer": "16.4.1"
   },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+  "eslintConfig": {
+    "filePath": "./eslintrc.js"
   },
+  "homepage": "https://github.com/aksonov/react-native-router-flux#readme",
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
@@ -81,12 +94,25 @@
       "./test/setup.js"
     ]
   },
-  "eslintConfig": {
-    "filePath": "./eslintrc.js"
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "react-native-router-flux",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/react-native-router-flux",
-    "logo": "https://opencollective.com/opencollective/logo.txt"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksonov/react-native-router-flux.git"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "fix": "prettier-eslint $PWD/'src/**/*.js' $PWD/'__tests__/**/*.js' --write",
+    "lint": "prettier-eslint $PWD/'src/**/*.js' $PWD/'__tests__/**/*.js' --list-different",
+    "postinstall": "opencollective postinstall || exit 0",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "types": "index.d.ts",
+  "version": "4.2.0"
 }
